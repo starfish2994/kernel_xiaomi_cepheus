@@ -38,7 +38,7 @@ jobs:
       - name: Build Kernel
         run: |
           # 进入内核源码目录（根据你的仓库结构调整路径）
-          cd kernel
+          
           # 生成默认配置（或使用自定义 .config）
           make defconfig
           # 编译内核（-j 后面跟线程数，Actions 虚拟机默认 2 核，用 -j2）
